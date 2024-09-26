@@ -30,3 +30,13 @@ curl -X POST "http://localhost:8080/api/decompress" \
 ```
 
 Ensure that the paths are correct.
+
+### GUI
+The ui was built in tkinter. It communicates with the rest api using the ```requests``` library. The ui files expect a theme called [Forest theme](https://github.com/rdbende/Forest-ttk-theme)
+
+Transfer the jar file to the root of your python directory and package it with pyinstaller
+```bash
+pyinstaller starter.spec
+```
+
+Modify the spec file as you require.
