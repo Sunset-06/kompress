@@ -3,6 +3,13 @@ A very simple spring-boot api, which alllows you to compress and decompress file
 
 There are only two endpoints, /compress and /decompress
 
+## Why is it a spring-boot app?
+Well why not?
+I wanted to try out making an app that runs off of web infrastructure but actually is a native app.
+To put it simply, its a gui that sends and recieves http requests. I planned  it on working somewhat similar to an electron app, if you know about it.
+
+On starting the app, a local tomcat server is started on port 8080 of the user's device and then the ui then inteeracts with the server locally.
+
 ### To start the server, run these scripts
 ```
  mvn clean install
@@ -40,3 +47,5 @@ pyinstaller starter.spec
 ```
 
 Modify the spec file as you require.
+
+It should work the way I packaged it, but I had dificulties running it. Weirdly enough it ran fine when the file was called from the command line. If you also have difficulties, I recommend doing the same.
